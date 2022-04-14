@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
+    height: calc(100vh - 363px);
 }
 
 #header {
@@ -12,27 +14,90 @@ body {
 }
 
 #header img {
-    width: 140px;
+    width: 180px;
 }
 
-.manutencao img {
+.manutencao {
+    height: 100%;
     display: flex;
-    height: 150px;
-    padding-left: 590px;
-    padding-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .manutencao h1 {
     color: #393e46;
-    display: flex;
-    justify-content: center;
     padding-top: 20px;
+    font-weight: bold;
 }
 
 .manutencao p {
+    padding-top: 20px;
+}
+
+footer {
+    background-color: #393e46;
+    padding: 50px;
+    color: #fff;
+}
+
+.aboutUsText h3{
+    font-size: 22px;
+}
+
+.aboutUsText p{
+    color: #999999
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252525;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactItem:not(:first-child) {
+    margin: 10px 0;
+}
+
+.contactItem a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.socialNetwork ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.socialNetwork ul li {
     display: flex;
     justify-content: center;
-    text-align: center;
-    padding-top: 20px;
-    font-weight: bold;
+    align-items: center;
+    background-color: #252525;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s;
+}
+
+.socialNetwork ul li:hover {
+    background-color: #2e2e2e;
+    transition: all 0.3s;
+}
+
+.socialNetwork ul li a {
+    color: #fff;
 }
