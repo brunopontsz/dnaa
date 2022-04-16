@@ -11,7 +11,7 @@ body {
     --marquee-height: 100%;
     --marquee-elements-displayed: 3;
     --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
-    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+    --marquee-animation-duration: calc(var(--marquee-elements) * 6s);
 }
 
 @media screen and (max-width: 1200px){
